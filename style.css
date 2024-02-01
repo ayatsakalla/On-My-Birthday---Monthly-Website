@@ -100,10 +100,36 @@ body {
     border-radius: 15px;
 }
 
-.poop {
+.poop:hover {
+    cursor: pointer;
+}
+
+.pics {
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+    padding: 40%;
     background-color: white;
 }
 
-.poop:hover {
-    cursor: pointer;
+.earthquake:hover {
+    background-image: url('button/earthquake-button.jpg');
+    transition: opacity 1s ease-in-out;
+}
+
+.manet:hover {
+    background-image: url('button/edouard-manet-button.jpg');
+    
+}
+
+.robben:hover {
+    background-image: url('button/robben-button.jpg');
+}
+
+.rockroll:hover {
+    background-image: url('button/rock-n-roll-button.jpg');
+}
+
+.carson:hover {
+    background-image: url('button/johhny-carson-button.jpg');
 }

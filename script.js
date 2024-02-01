@@ -5,7 +5,7 @@ function year1556() {
 }
 
 function year1832() {
-    document.getElementById('title').innerText = "1832: Édouard Manet";
+    document.getElementById('title').innerText = "1832: Edouard Manet";
     // document.getElementById('image').src = https://picsum.photos/200;
     // document.getElementById('iframe').src = //insert iframe src here;
 }
