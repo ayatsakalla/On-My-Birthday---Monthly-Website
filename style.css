@@ -1,5 +1,109 @@
-.opening-page {
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'bubblyduck';
+    src: url('Copyduck-MAYWw.otf');
+}
+
+.bubblyduck {
+    font-family: 'bubblyduck';
+}
+/* fonts end */
+
+.container-fluid.pink {
     width: 100%;
-    height: fit-content;
-    background-color: plum;
+    height: 100%;
+    background-color: #2A1F2D;
+    margin: 0;
+    padding: 0;
+
+}
+
+.date {
+    padding: 2%;
+    font-size: 8vw;
+}
+
+/* candle */
+.space {
+    justify-content: space-between;
+}
+
+.candle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flame {
+    height: 30px;
+    width: 15px;
+    background-color: #ffad00;
+    border-radius: 8px 8px 8px 8px/20px 20px 8px 8px;
+    box-shadow: 0 0 20px 0 #ffad00;
+    animation: animate 15s ease-in-out infinite, glow 2s infinite ease;
+}
+
+.wick {
+    height: 10px;
+    width: 3px;
+    background: #ad87a9;
+}
+
+.wax {
+    width: 40px;
+    height: 110px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    box-shadow: inset -15px 0 0 -10px #d8deed;
+}
+
+.stand {
+    width: 100px;
+    height: 8px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@keyframes animate {
+    0%, 22%, 49%, 62%, 81%, 100% {
+        border-radius: 2px 14px 8px 8px/20px 20px 8px 8px;
+    }
+
+    14%, 32%, 56%, 70%, 89% {
+        border-radius: 14px 2px 8px 8px/20px 20px 8px 8px;
+    }
+}
+
+@keyframes glow {
+    0%, 30%, 60%, 80%, 100% {
+        box-shadow: 0 0 20px #ffad00;
+    }
+
+    20%, 0%, 70% {
+        box-shadow: 0 0 20px #ffad00;
+    }
+}
+/* candle end */
+
+.bg-col {
+    background-color: #2e2231;
+}
+/* buttons */
+.butt {
+    font-size: 2.5vw;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.poop {
+    background-color: white;
+}
+
+.poop:hover {
+    cursor: pointer;
 }
