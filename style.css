@@ -12,6 +12,15 @@ body {
 .bubblyduck {
     font-family: 'bubblyduck';
 }
+
+@font-face {
+    font-family: 'birdy';
+    src: url('FlyingBird-Yz9Ga.otf');
+}
+
+.birdy {
+    font-family: 'birdy';
+}
 /* fonts end */
 
 .container-fluid.pink {
@@ -62,7 +71,7 @@ body {
 .stand {
     width: 70px;
     height: 8px;
-    background-color: white;
+    background-color: rgb(61, 8, 8);
     border-radius: 3px;
     border-color: black;
     border-width: thick;
@@ -92,6 +101,10 @@ body {
 .bg-col {
     background-color: #2e2231;
 }
+
+.travel {
+    font-size: 4vw;
+}
 /* buttons */
 .butt {
     font-size: 2.5vw;
@@ -108,7 +121,8 @@ body {
     background-size: cover;
     aspect-ratio: 1 / 1;
     padding: 40%;
-    background-color: white;
+    background-color: whitesmoke;
+    border-radius: 10%;
 }
 
 .pics:hover {
