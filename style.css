@@ -29,9 +29,6 @@ body {
 }
 
 /* candle */
-.space {
-    justify-content: space-between;
-}
 
 .candle {
     display: flex;
@@ -63,10 +60,12 @@ body {
 }
 
 .stand {
-    width: 100px;
+    width: 70px;
     height: 8px;
     background-color: white;
     border-radius: 3px;
+    border-color: black;
+    border-width: thick;
 }
 
 @keyframes animate {
@@ -112,9 +111,16 @@ body {
     background-color: white;
 }
 
+.pics:hover {
+    cursor: pointer;
+}
+
 .earthquake:hover {
     background-image: url('button/earthquake-button.jpg');
-    transition: opacity 1s ease-in-out;
+}
+
+.earthquake:hover > * {
+    opacity: 0;
 }
 
 .manet:hover {
@@ -122,14 +128,31 @@ body {
     
 }
 
+.manet:hover > * {
+    opacity: 0;
+}
+
 .robben:hover {
     background-image: url('button/robben-button.jpg');
+}
+
+.robben:hover > * {
+    opacity: 0;
 }
 
 .rockroll:hover {
     background-image: url('button/rock-n-roll-button.jpg');
 }
 
+.rockroll:hover > * {
+    opacity: 0;
+}
+
 .carson:hover {
     background-image: url('button/johhny-carson-button.jpg');
 }
+
+.carson:hover > * {
+    opacity: 0;
+}
+
